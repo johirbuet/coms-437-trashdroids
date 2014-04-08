@@ -7,16 +7,31 @@ Attributions
 ------------
 
 Particle System:
-	The particle system used in this software is distributed by Microsoft under the Ms-PL license (http://www.microsoft.com/en-us/openness/licenses.aspx). The original, unmodified works for the Particle System can be found at: http://xbox.create.msdn.com/downloads/?id=496&filename=Particles3DSample_4_0.zip
+* The particle system used in this software is distributed by Microsoft under the Ms-PL license:
 	
-The following files fall under this agreement:
-- Trashdroids/Trashdroids/Particles/ExplosionParticleSystem.cs
-- Trashdroids/Trashdroids/Particles/MissileParticleSystem.cs
-- Trashdroids/Trashdroids/Particles/ParticleSettings.cs
-- Trashdroids/Trashdroids/Particles/ParticleSystem.cs
-- Trashdroids/Trashdroids/Particles/ParticleVertex.cs
-- Trashdroids/Trashdroids/Particles/PowerupParticleSystem.cs
-- Trashdroids/Trashdroids/TrashdroidsContent/particles/ParticleEffect.fx
+> http://www.microsoft.com/en-us/openness/licenses.aspx
+
+* The original, unmodified works for the Particle System can be found at: 
+
+> http://xbox.create.msdn.com/downloads/?id=496&filename=Particles3DSample_4_0.zip
+	
+* The following files fall under this agreement:
+> Trashdroids/Trashdroids/Particles/ExplosionParticleSystem.cs
+> Trashdroids/Trashdroids/Particles/MissileParticleSystem.cs
+> Trashdroids/Trashdroids/Particles/ParticleSettings.cs
+> Trashdroids/Trashdroids/Particles/ParticleSystem.cs
+> Trashdroids/Trashdroids/Particles/ParticleVertex.cs
+> Trashdroids/Trashdroids/Particles/PowerupParticleSystem.cs
+> Trashdroids/Trashdroids/TrashdroidsContent/particles/ParticleEffect.fx
+
+BEPU Physics:
+* All BEPU Physics content is licensed under the Apache License 2.0 (http://bepuphysics.codeplex.com/license)
+
+* All content in the following directories fall under this agreement:
+> Trashdroids/BEPUphysics
+> Trashdroids/BEPUphysicsDrawer
+> Trashdroids/BEPUutilities
+> Trashdroids/ConversionHelper
      
 "Droid" model:
 * Source: http://www.turbosquid.com/FullPreview/Index.cfm/ID/499274
