@@ -9,45 +9,46 @@ Attributions
 Particle System:
 	The particle system used in this software is distributed by Microsoft under the Ms-PL license (http://www.microsoft.com/en-us/openness/licenses.aspx). The original, unmodified works for the Particle System can be found at: http://xbox.create.msdn.com/downloads/?id=496&filename=Particles3DSample_4_0.zip
 	
-	The following files fall under this agreement:
-		Trashdroids/Trashdroids/Particles/ExplosionParticleSystem.cs
-		Trashdroids/Trashdroids/Particles/MissileParticleSystem.cs
-		Trashdroids/Trashdroids/Particles/ParticleSettings.cs
-		Trashdroids/Trashdroids/Particles/ParticleSystem.cs
-		Trashdroids/Trashdroids/Particles/ParticleVertex.cs
-		Trashdroids/Trashdroids/Particles/PowerupParticleSystem.cs
-		Trashdroids/Trashdroids/TrashdroidsContent/particles/ParticleEffect.fx
+The following files fall under this agreement:
+- Trashdroids/Trashdroids/Particles/ExplosionParticleSystem.cs
+- Trashdroids/Trashdroids/Particles/MissileParticleSystem.cs
+- Trashdroids/Trashdroids/Particles/ParticleSettings.cs
+- Trashdroids/Trashdroids/Particles/ParticleSystem.cs
+- Trashdroids/Trashdroids/Particles/ParticleVertex.cs
+- Trashdroids/Trashdroids/Particles/PowerupParticleSystem.cs
+- Trashdroids/Trashdroids/TrashdroidsContent/particles/ParticleEffect.fx
      
 "Droid" model:
-    Source:               http://www.turbosquid.com/FullPreview/Index.cfm/ID/499274
-    Author:               gentlemenk
+* Source: http://www.turbosquid.com/FullPreview/Index.cfm/ID/499274
+* Author: gentlemenk
      
 Missile model:
-    Source:               http://www.turbosquid.com/FullPreview/Index.cfm/ID/671861
-    Author:               max web
+* Source: http://www.turbosquid.com/FullPreview/Index.cfm/ID/671861
+* Author: max web
      
 Sound effect: crash_metal
-    Source:               https://www.freesound.org/people/Halleck/sounds/121657/
-    Author:               Halleck
+* Source:               https://www.freesound.org/people/Halleck/sounds/121657/
+* Author: Halleck
      
-Sound effect: ingame_ambient 
-    Source:               http://freesound.org/people/Diboz/sounds/211683/
-    Author:               Diboz
+Sound effect: ingame_ambient
+* Source: http://freesound.org/people/Diboz/sounds/211683/
+* Author: Diboz
  
 Sound effect: explode_small
-    Source:               https://www.freesound.org/people/Omar%20Alvarado/sounds/199725/
-    Author:               Omar Alvarado
-     
+* Source: https://www.freesound.org/people/Omar%20Alvarado/sounds/199725/
+* Author: Omar Alvarado
+
+
 Sound effect: explode_large
-    Source:               https://www.freesound.org/people/ryansnook/sounds/110113/
-    Author:               ryansnook
+* Source: https://www.freesound.org/people/ryansnook/sounds/110113/
+* Author: ryansnook
      
 Sound effect: engine
-    Source:               http://www.freesound.org/people/qubodup/sounds/146770/
-    Author:               qubodup
+* Source: http://www.freesound.org/people/qubodup/sounds/146770/
+* Author: qubodup
      
 Camera framework:
-    Source:               Taken from Greg's demo code, source unknown
+* Source: Taken from Greg's demo code, source unknown
 
 Introduction
 ------------
@@ -58,17 +59,12 @@ It is the distant future, the year 2000. During the robotic uprising of the late
 Objective
 ---------
 
-Single Player:
-	Destroy at least 50% of the asteroids on the field. After 3 collisions
-	with other objects, your ship is destroyed and you lose.
+Single Player: Destroy at least 50% of the asteroids on the field. After 3 collisions with other objects, your ship is destroyed and you lose.
 
-Multiplayer:
-	Destroy the enemy ship! Ships are only damaged by missiles. Powerups may
-	also be collected to enhance your ship's capabilities.
+Multiplayer: Destroy the enemy ship! Ships are only damaged by missiles. Powerups may also be collected to enhance your ship's capabilities.
 
 <!---
 Controls
---------
 ╔═════════════════════╦═════════════╦════════════════════╗
 ║       Control       ║  Keyboard   ║      Gamepad       ║
 ╠═════════════════════╬═════════════╬════════════════════╣
@@ -86,5 +82,9 @@ Controls
 ║ Toggle Fullscreen   ║ Backspace   ║ N/A                ║
 ╚═════════════════════╩═════════════╩════════════════════╝
 -->
+Controls
+--------
+
+<table><tbody><tr><th>Control</th><th>Keyboard</th><th>Gamepad</th></tr><tr><td>Ship Movement</td><td> </td><td> </td></tr><tr><td>  Forward/Backward</td><td>W/S</td><td>L Stick Up/Down</td></tr><tr><td>  Strafe Left/Right</td><td>A/D</td><td>L Stick Left/Right</td></tr><tr><td>  Yaw</td><td>Q/E</td><td>Left/Right Bumpers</td></tr><tr><td>  Pitch</td><td>Up/Down</td><td>R Stick Up/Down</td></tr><tr><td>  Roll</td><td>Left/Right</td><td>R Stick Left/Right</td></tr><tr><td>  Stabilizer</td><td>L Shift</td><td>Left Trigger</td></tr><tr><td>  Fire weapon</td><td>Space</td><td>Right Trigger</td></tr><tr><td>Menu Controls</td><td> </td><td> </td></tr><tr><td>  Menu Navigation</td><td>Up/Down</td><td>D-Pad Up/Down</td></tr><tr><td>  Menu Selection</td><td>Space/Enter</td><td>Start/A</td></tr><tr><td>Toggle Fullscreen</td><td>Backspace</td><td>N/A</td></tr></tbody></table>
 
 
