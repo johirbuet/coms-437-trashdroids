@@ -21,34 +21,38 @@ The following files fall under this agreement:
 "Droid" model:
 * Source: http://www.turbosquid.com/FullPreview/Index.cfm/ID/499274
 * Author: gentlemenk
+* License: Turbosquid Royalty Free License (http://support.turbosquid.com/entries/31030006-Royalty-Free-License)
      
 Missile model:
 * Source: http://www.turbosquid.com/FullPreview/Index.cfm/ID/671861
 * Author: max web
+* License: Turbosquid Royalty Free License (http://support.turbosquid.com/entries/31030006-Royalty-Free-License)
      
 Sound effect: crash_metal
-* Source:               https://www.freesound.org/people/Halleck/sounds/121657/
+* Source: https://www.freesound.org/people/Halleck/sounds/121657/
 * Author: Halleck
+* License: Attribution (http://creativecommons.org/licenses/by/3.0/)
      
 Sound effect: ingame_ambient
 * Source: http://freesound.org/people/Diboz/sounds/211683/
 * Author: Diboz
- 
+* License: Creative Commons 0 (http://creativecommons.org/publicdomain/zero/1.0/)
+
 Sound effect: explode_small
 * Source: https://www.freesound.org/people/Omar%20Alvarado/sounds/199725/
 * Author: Omar Alvarado
+* License: Attribution Noncommercial (http://creativecommons.org/licenses/by-nc/3.0/)
 
 
 Sound effect: explode_large
 * Source: https://www.freesound.org/people/ryansnook/sounds/110113/
 * Author: ryansnook
+* License: Attribution (http://creativecommons.org/licenses/by/3.0/)
      
 Sound effect: engine
 * Source: http://www.freesound.org/people/qubodup/sounds/146770/
 * Author: qubodup
-     
-Camera framework:
-* Source: Taken from Greg's demo code, source unknown
+* License: Creative Commons 0 (http://creativecommons.org/publicdomain/zero/1.0/)
 
 Introduction
 ------------
