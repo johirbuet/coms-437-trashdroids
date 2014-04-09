@@ -8,7 +8,7 @@ Attributions
 
 Particle System:
 * The particle system used in this software is distributed by Microsoft under the [Ms-PL license.] (http://www.microsoft.com/en-us/openness/licenses.aspx)
-* The original, unmodified works for the Particle System can be found [here] (http://xbox.create.msdn.com/downloads/?id=496&filename=Particles3DSample_4_0.zip)
+* The original, unmodified works for the Particle System can be found [here.] (http://xbox.create.msdn.com/downloads/?id=496&filename=Particles3DSample_4_0.zip)
 * The following files fall under this agreement:
     * Trashdroids/Trashdroids/Particles/ExplosionParticleSystem.cs
     * Trashdroids/Trashdroids/Particles/MissileParticleSystem.cs
@@ -19,29 +19,28 @@ Particle System:
     * Trashdroids/Trashdroids/TrashdroidsContent/particles/ParticleEffect.fx
 
 BEPU Physics:
-* All BEPU Physics content is licensed under the Apache License 2.0 (http://bepuphysics.codeplex.com/license)
-
+* All BEPU Physics content is licensed under the [Apache License 2.0.] (http://bepuphysics.codeplex.com/license)
 * All content in the following directories fall under this agreement:
     * Trashdroids/BEPUphysics
     * Trashdroids/BEPUphysicsDrawer
     * Trashdroids/BEPUutilities
     * Trashdroids/ConversionHelper
-     
+
 "Droid" model:
 * Source: http://www.turbosquid.com/FullPreview/Index.cfm/ID/499274
 * Author: gentlemenk
 * License: Turbosquid Royalty Free License (http://support.turbosquid.com/entries/31030006-Royalty-Free-License)
-     
+
 Missile model:
 * Source: http://www.turbosquid.com/FullPreview/Index.cfm/ID/671861
 * Author: max web
 * License: Turbosquid Royalty Free License (http://support.turbosquid.com/entries/31030006-Royalty-Free-License)
-     
+
 Sound effect: crash_metal
 * Source: https://www.freesound.org/people/Halleck/sounds/121657/
 * Author: Halleck
 * License: Attribution (http://creativecommons.org/licenses/by/3.0/)
-     
+
 Sound effect: ingame_ambient
 * Source: http://freesound.org/people/Diboz/sounds/211683/
 * Author: Diboz
@@ -52,12 +51,11 @@ Sound effect: explode_small
 * Author: Omar Alvarado
 * License: Attribution Noncommercial (http://creativecommons.org/licenses/by-nc/3.0/)
 
-
 Sound effect: explode_large
 * Source: https://www.freesound.org/people/ryansnook/sounds/110113/
 * Author: ryansnook
 * License: Attribution (http://creativecommons.org/licenses/by/3.0/)
-     
+
 Sound effect: engine
 * Source: http://www.freesound.org/people/qubodup/sounds/146770/
 * Author: qubodup
