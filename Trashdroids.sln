@@ -10,6 +10,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrashdroidsContent", "Trashdroids\TrashdroidsContent\TrashdroidsContent.contentproj", "{2445A2F8-2362-492A-9630-8D9E2389EE6E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BEPUphysics", "Trashdroids\BEPUphysics\BEPUphysics.csproj", "{C0D52C9F-14B8-4008-8DDC-109C27561A5C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BB5BF3E0-DD34-44D4-86FB-F336BB4720CA} = {BB5BF3E0-DD34-44D4-86FB-F336BB4720CA}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BEPUutilities", "Trashdroids\BEPUutilities\BEPUutilities.csproj", "{34853DEA-43A6-4F2F-A379-D1EE04D256D2}"
 EndProject
