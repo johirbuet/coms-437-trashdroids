@@ -32,6 +32,8 @@ namespace Trashdroids
 
         private const float _extraScale = 1f;
 
+        private float _velocity;
+
         private static Nullable<Microsoft.Xna.Framework.Matrix> _defaultRootTransform = null;
         
         public override Microsoft.Xna.Framework.Matrix World
@@ -115,6 +117,7 @@ namespace Trashdroids
                     (float)rand.NextDouble() * 18 * (rand.Next(2) == 0 ? -1 : 1),
                     (float)rand.NextDouble() * 18 * (rand.Next(2) == 0 ? -1 : 1),
                     (float)rand.NextDouble() * 18 * (rand.Next(2) == 0 ? -1 : 1));
+                _velocity = _collider.LinearVelocity.Length();
             }
 
 
@@ -133,6 +136,13 @@ namespace Trashdroids
             (_game.Services.GetService(typeof(Space)) as Space).Remove(_collider);
         }
 
+        public void Update()
+        {
+            if (TrashdroidsGame.ASTEROIDS_MOVEABLE)
+            {
+                _collider.LinearVelocity = BEPUutilities.Vector3.Normalize(_collider.LinearVelocity) * _velocity;
+            }
+        }
 
         //Blows up this asteroid (and spawns smaller ones, if needed)
         public void Explode()

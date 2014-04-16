@@ -58,7 +58,7 @@ namespace Trashdroids
             "corner of the solar system, they face one great challenge: garbage. If they\n" +
             "jettison their garbage into the void of space, the robots could use their, erm,\n" +
             "magic... garbage scanners... or something... to detect the humans. This challenge\n" +
-            "forced the humans to create unique trash receptacles, inside of which trash\n" +
+            "forced the humans to create unique trash receptacles, inside of which the trash\n" +
             "must somehow be destroyed. Clearly, the only logical solution is to blow it up\n" +
             "with missiles. The receptacles were filled with tiny, trash-destroying droids and\n" +
             "thus, Trashdroids were born.";
@@ -172,12 +172,14 @@ namespace Trashdroids
 
         public TrashdroidsGame()
         {
-            //Uncomment the following to set up some decent multiplayer parameters
+            //Set multiplayer defaults
+            //Multiplayer defaults
+            UNIVERSE_RADIUS = 50;
+            ASTEROIDS_NUM = 150;
+            MISSILE_STREAM_MODE = true;
+            MISSILE_SPREAD_MODE = false;
             ASTEROIDS_MOVEABLE = false;
             ASTEROIDS_DESTRUCTABLE = false;
-            MISSILE_STREAM_MODE = true;
-            UNIVERSE_RADIUS = 75;
-            ASTEROIDS_NUM = 150;
 
             //XNA graphics
             _screenManager = new ScreenManager(this, new GraphicsDeviceManager(this));
@@ -445,6 +447,27 @@ namespace Trashdroids
                     {
                         ASTEROIDS_MOVEABLE = !ASTEROIDS_MOVEABLE;
                     }
+                    if(KeyWasPressed(Keys.M))
+                    {
+                        //Multiplayer defaults
+                        UNIVERSE_RADIUS = 50;
+                        ASTEROIDS_NUM = 150;
+                        MISSILE_STREAM_MODE = true;
+                        MISSILE_SPREAD_MODE = false;
+                        ASTEROIDS_MOVEABLE = false;
+                        ASTEROIDS_DESTRUCTABLE = false;
+                    }
+                    if(KeyWasPressed(Keys.N))
+                    {
+                        //Single player defaults
+                        UNIVERSE_RADIUS = 20;
+                        ASTEROIDS_NUM = 3;
+                        MISSILE_STREAM_MODE = true;
+                        MISSILE_SPREAD_MODE = false;
+                        ASTEROIDS_MOVEABLE = true;
+                        ASTEROIDS_DESTRUCTABLE = true;
+                    }
+
                     // Return to menu
                     if (KeyWasPressed(Buttons.Back, PlayerIndex.One) ||
                         KeyWasPressed(Buttons.Back, PlayerIndex.Two) ||
@@ -495,6 +518,10 @@ namespace Trashdroids
                     {
                         missile.Update(gameTime);
                     }
+                    foreach (Asteroid asteroid in _asteroids)
+                    {
+                        asteroid.Update();
+                    }
                     if (_powerup != null)
                     {
                         _powerup.Update();
@@ -542,6 +569,10 @@ namespace Trashdroids
                     foreach (Missile missile in _missiles)
                     {
                         missile.Update(gameTime);
+                    }
+                    foreach (Asteroid asteroid in _asteroids)
+                    {
+                        asteroid.Update();
                     }
                     if (_powerup != null)
                     {
@@ -703,6 +734,17 @@ namespace Trashdroids
                             new Vector2(colDivider1 + 50, 390 + yTitleOffset), Color.CornflowerBlue);
                     _spriteBatch.DrawString(_basicFont, (_screenManager.IsFullScreen ? "Enabled" : "Disabled"),
                             new Vector2(colDivider2, 390 + yTitleOffset), Color.CornflowerBlue);
+
+                    _spriteBatch.DrawString(_basicFont, "Single Player Defaults",
+                            new Vector2(colDivider1 - _basicFont.MeasureString("Single Player Defaults").X, 470 + yTitleOffset), Color.CornflowerBlue);
+                    _spriteBatch.DrawString(_basicFont, "N",
+                            new Vector2(colDivider1 + 50, 470 + yTitleOffset), Color.CornflowerBlue);
+
+                    _spriteBatch.DrawString(_basicFont, "Multiplayer Defaults",
+                            new Vector2(colDivider1 - _basicFont.MeasureString("Single Player Defaults").X, 510 + yTitleOffset), Color.CornflowerBlue);
+                    _spriteBatch.DrawString(_basicFont, "M",
+                            new Vector2(colDivider1 + 50, 510 + yTitleOffset), Color.CornflowerBlue);
+
 
                     _spriteBatch.End();
                     break;

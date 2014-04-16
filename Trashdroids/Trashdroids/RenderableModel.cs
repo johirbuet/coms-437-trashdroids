@@ -5,7 +5,6 @@ using System.Text;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
-//TODO: Credit author (Taken from greg's)
 namespace Trashdroids
 {
     public class RenderableModel : ITargetable

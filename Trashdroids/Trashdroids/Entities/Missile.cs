@@ -111,45 +111,45 @@ namespace Trashdroids
 
         public void Update(GameTime gameTime)
         {
-            //Homing!
-
-            BEPUutilities.Vector3 targetPos;
-
-            if (_target != null)
+            if (_game.GameState == GameState.IN_GAME_MULTIPLAYER)
             {
-                targetPos = MathConverter.Convert(
-                    Microsoft.Xna.Framework.Vector3.Transform(_target.World.Translation - World.Translation, Microsoft.Xna.Framework.Matrix.Invert(MathConverter.Convert(_collider.OrientationMatrix))));
-            }
-            else
-            {
-                targetPos = MathConverter.Convert(
-                    Microsoft.Xna.Framework.Vector3.Transform(-World.Translation, Microsoft.Xna.Framework.Matrix.Invert(MathConverter.Convert(_collider.WorldTransform))));
+                //Homing!
+                BEPUutilities.Vector3 targetPos;
+
+                if (_target != null)
+                {
+                    targetPos = MathConverter.Convert(
+                        Microsoft.Xna.Framework.Vector3.Transform(_target.World.Translation - World.Translation, Microsoft.Xna.Framework.Matrix.Invert(MathConverter.Convert(_collider.OrientationMatrix))));
+                }
+                else
+                {
+                    targetPos = MathConverter.Convert(
+                        Microsoft.Xna.Framework.Vector3.Transform(-World.Translation, Microsoft.Xna.Framework.Matrix.Invert(MathConverter.Convert(_collider.WorldTransform))));
+                }
+
+                _collider.AngularMomentum = BEPUutilities.Vector3.Zero;
+
+                if (targetPos.X < 0)
+                {
+                    _collider.AngularMomentum -= MathConverter.Convert(this.World.Forward * _owner.HeatSeekingStrength);
+                }
+                else if (targetPos.X > 0)
+                {
+                    _collider.AngularMomentum += MathConverter.Convert(this.World.Forward * _owner.HeatSeekingStrength);
+                }
+
+                if (targetPos.Z < 0)
+                {
+                    _collider.AngularMomentum -= MathConverter.Convert(this.World.Right * _owner.HeatSeekingStrength);
+                }
+                else if (targetPos.Z > 0)
+                {
+                    _collider.AngularMomentum += MathConverter.Convert(this.World.Right * _owner.HeatSeekingStrength);
+                }                
             }
 
-            _collider.AngularMomentum = BEPUutilities.Vector3.Zero;
-
-            if (targetPos.X < 0)
-            {
-                _collider.AngularMomentum -= MathConverter.Convert(this.World.Forward * _owner.HeatSeekingStrength);
-            }
-            else if (targetPos.X > 0)
-            {
-                _collider.AngularMomentum += MathConverter.Convert(this.World.Forward * _owner.HeatSeekingStrength);
-            }
-
-            if (targetPos.Z < 0)
-            {
-                _collider.AngularMomentum -= MathConverter.Convert(this.World.Right * _owner.HeatSeekingStrength);
-            }
-            else if (targetPos.Z > 0)
-            {
-                _collider.AngularMomentum += MathConverter.Convert(this.World.Right * _owner.HeatSeekingStrength);
-            }
-
-            _collider.LinearVelocity = MathConverter.Convert( this.World.Up * Math.Max(_velocity, _collider.LinearVelocity.Length()));
-
-            //Create 
             _game.CreateMissileTrailEffect(World.Translation);
+            _collider.LinearVelocity = MathConverter.Convert(this.World.Up * Math.Max(_velocity, _collider.LinearVelocity.Length()));
         }
     }
 }
